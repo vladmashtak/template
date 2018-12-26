@@ -1,0 +1,55 @@
+@import "material.min.scss";
+
+.header-row {
+  position: relative;
+  background-image: url(../img/wall4.png);
+}
+
+.main-row {
+  height: calc(100vh - 200px);
+}
+
+.main-title {
+  font-family: elevate-display-font,medium-marketing-display-font,Georgia,Cambria,"Times New Roman",Times,serif!important;
+  font-style: normal!important;
+  font-weight: 500!important;
+  font-size: 56px;
+  color: rgba(0,0,0,.84);
+  line-height: 64px;
+  letter-spacing: 0;
+}
+
+.logo-row {
+  min-height: 200px;
+  justify-content: center;
+}
+
+.navigation-row {
+  background-color: rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  height: 45px;
+  justify-content: center;
+
+  .mdl-navigation__link {
+    //text-shadow: 1px 1px 2px black;
+    line-height: 42px;
+    color: rgb(66,66,66)!important;
+
+
+    &.is-active {
+      position: relative;
+      font-weight: bold;
+
+      &::after {
+        content: "";
+        width: 70%;
+        height: 2px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        background-color: #3e77e6;
+        left: 15%;
+      }
+    }
+  }
+}
