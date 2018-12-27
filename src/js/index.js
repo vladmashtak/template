@@ -1,1 +1,1 @@
-import "./material.min.js";
+import "materialize-css"

@@ -1,4 +1,24 @@
-@import "material.min.scss";
+@import "~materialize-css/sass/materialize";
+
+$font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/materialicons.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+body {
+  font-family: $font-stack;
+}
 
 .header-row {
   position: relative;
@@ -7,16 +27,6 @@
 
 .main-row {
   height: calc(100vh - 200px);
-}
-
-.main-title {
-  font-family: elevate-display-font,medium-marketing-display-font,Georgia,Cambria,"Times New Roman",Times,serif!important;
-  font-style: normal!important;
-  font-weight: 500!important;
-  font-size: 56px;
-  color: rgba(0,0,0,.84);
-  line-height: 64px;
-  letter-spacing: 0;
 }
 
 .logo-row {
@@ -31,10 +41,8 @@
   justify-content: center;
 
   .mdl-navigation__link {
-    //text-shadow: 1px 1px 2px black;
     line-height: 42px;
-    color: rgb(66,66,66)!important;
-
+    color: rgb(66, 66, 66) !important;
 
     &.is-active {
       position: relative;
